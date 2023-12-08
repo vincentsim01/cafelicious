@@ -17,6 +17,7 @@ const QuickDisplay = (props) => {
                             <div className="tileComponent2">
                                 <div className="compHeading">
                                     <a href="../listing/listing.html">{item.mealtype}</a>
+                                    {item.foodtype}
                                 </div>
                                 <div className="compSubHeading">
                                     {item.content}

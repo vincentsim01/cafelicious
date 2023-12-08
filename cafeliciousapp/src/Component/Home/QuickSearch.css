@@ -6,6 +6,7 @@
     margin-left:10%;
     margin-top:2%;
     margin-bottom:2%;
+    font-family: 'Comfortaa', sans-serif;
   }
   
   .quickHeading{
@@ -14,6 +15,7 @@
       font-weight:bold;
       display: block;
       margin-left:2%;
+      font-family: 'Comfortaa', sans-serif;
   }
   
   .quickHeading:hover{
@@ -26,6 +28,7 @@
       font-size:20px;
       line-height: 2;
       margin-left:2%;
+      font-family: 'Comfortaa', sans-serif;
   }
   
   
@@ -38,6 +41,7 @@
       box-shadow:10px 20px 10px gray;
       float: left;
       animation:dance 15s;
+      border-radius:20px;
   }
   
   @keyframes dance {

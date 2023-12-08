@@ -4,7 +4,8 @@ footer{
     /* border:10px double orange */
     background-color: #3b2632;
     text-align: center;
-    color: white
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .footText{

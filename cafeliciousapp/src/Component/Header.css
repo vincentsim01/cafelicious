@@ -11,6 +11,8 @@ header{
     height:60px;
     /*border:5px solid hotpink;*/
     background-color: #3b2632;
+    padding:5px;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 #brand{
@@ -19,11 +21,11 @@ header{
     font-size: 30px;
     margin-top:1%;
     margin-left:1%;
-    border: 1px solid black;
+
 }
 
 #menu{
-    border:1px solid black;
+
     margin-left:5%;
     margin-top:20px;
 }
@@ -31,6 +33,8 @@ header{
 .menumenu{
     margin-left:15px;
     margin-top:15px;
+    display:inline-block;
+    color:white;
 }
 
 #social{

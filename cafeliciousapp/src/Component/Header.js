@@ -5,9 +5,9 @@ import {Link} from 'react-router-dom';
 const Header = () => {
     return(
         <header>
-            <div id="brand">
+            {/* <div id="brand">
                 Cafelicious
-            </div>
+            </div> */}
             <span id="menu">
             <Link to="/" className="menumenu">Home</Link>
             <Link to="/" className="menumenu">About Us</Link>
