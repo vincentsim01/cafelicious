@@ -10,14 +10,14 @@ a{
 header{
     height:60px;
     /*border:5px solid hotpink;*/
-    background-color: #3b2632;
+    background-color: pink;
     padding:5px;
     font-family: 'Comfortaa', sans-serif;
 }
 
 #brand{
     float: left;
-    color:white;
+    color:black;
     font-size: 30px;
     margin-top:1%;
     margin-left:1%;
@@ -34,7 +34,7 @@ header{
     margin-left:15px;
     margin-top:15px;
     display:inline-block;
-    color:white;
+    color:black;
 }
 
 #social{

@@ -7,8 +7,13 @@
     /* background-size: cover; */
     background-size: 100% 450px;
     font-family: 'Comfortaa', sans-serif;
+    position:relative;
 }
 
+#search::before{
+    background-color: grey;
+    opacity:0.5;
+}
 
 
 
