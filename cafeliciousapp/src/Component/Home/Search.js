@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-// import './Search.css';
+import './Search.css';
 
 const baseUrl = "http://localhost:9120"
 
