@@ -20,7 +20,6 @@ const QuickDisplay = (props) => {
                                 </div>
                                 <div className="compSubHeading">
                                     {item.content}
-                                    <h2>ZEHAHAHAHA</h2>
                                 </div>
                             </div>
                         </div>
