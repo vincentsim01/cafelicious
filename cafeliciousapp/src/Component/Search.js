@@ -33,6 +33,29 @@ const Search = () => {
     }
 
 
+    const handleCity = (event) => {
+        console.log(event.target.value);
+        let stateId = event.target.value;
+        fetch(`${baseUrl}/restaurants?stateId=${stateId}`,{method:'GET'})
+        .then((res) => res.json())
+        .then((data) => {
+            setRestaurant(data)
+        })
+    }
+
+
+    const renderRestaurant = (data) => {
+        if(data){
+            return data.map((item) => {
+                return(
+                    <option key={item.restaurant_id} value={item.restaurant_id}>
+                        {item.restaurant_name} | {item.address}
+                    </option>
+                )
+            })
+        }
+    }
+
 
 
 
@@ -47,12 +70,13 @@ const Search = () => {
               {title}
            </div>
            <div className="dropdown">
-                <select>
+                <select onChange={handleCity}>
                    <option>-----SELECT YOUR CITY-----</option>
                    {renderCity(location)}
                 </select>
                 <select>
                     <option>-----SELECT YOUR RESTAURANTS-----</option>
+                    {renderRestaurant(restaurant)}
                 </select>
            </div>
         </div>
