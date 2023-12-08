@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react';
-// import './QuickSearch.css';
+import './QuickSearch.css';
 import QuickDisplay  from './QuickDisplay';
 
 const baseUrl = "http://localhost:9120";
