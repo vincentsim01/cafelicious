@@ -12,7 +12,7 @@ const QuickSearch = () => {
         .then((res) => res.json())
         .then((data) => {
             setMealType(data)
-            console.log(data)
+
         })
     },[])
 
