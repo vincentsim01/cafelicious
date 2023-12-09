@@ -9,15 +9,15 @@ const QuickDisplay = (props) => {
         if(mealData){
             return mealData.map((item) => {
                 return(
-                    <Link to={`/listing/${item.mealtype_id}`} key={item.mealtype_id}>
+                    <Link to={`/listing/${item.foodtype_id}`} key={item.foodtype_id}>
                         <div className="tileContainer">
                             <div className="tileComponent1">
                                 <img src={item.meal_image} alt="drinks"/>
                             </div>
                             <div className="tileComponent2">
                                 <div className="compHeading">
-                                    <a href="../listing/listing.html">{item.mealtype}</a>
-                                    {item.foodtype}
+                                    <a href="../listing/listing.html">{item.foodtype}</a>
+
                                 </div>
                                 <div className="compSubHeading">
                                     {item.content}
