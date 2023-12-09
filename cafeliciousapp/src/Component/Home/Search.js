@@ -2,6 +2,9 @@ import React,{useState,useEffect} from 'react';
 import './Search.css';
 
 const baseUrl = "http://localhost:9120"
+const blaUrl=process.env.REACT_APP_API_URL;
+
+console.log("this is the blaURL:"+blaUrl);
 
 const Search = () => {
 
@@ -63,18 +66,20 @@ const Search = () => {
     return(
         <div id="search">
            <div className="logo">
-               <span><div id="zomatologocontainer"><img id="zomatologo" src="https://i.ibb.co/8rFhHTz/download.jpg"></img></div></span>
+               <span><div id="zomatologocontainer"><img id="zomatologo" src="https://i.ibb.co/7p9ByZK/cafelicious-circle.png"></img></div></span>
+
+               
            </div>
 
            <div id="heading">
               {title}
            </div>
            <div className="dropdown">
-                <select onChange={handleCity}>
+                <select onChange={handleCity} className="selectstyle">
                    <option>-----SELECT YOUR CITY-----</option>
                    {renderCity(location)}
                 </select>
-                <select>
+                <select className="selectstyle">
                     <option>-----SELECT YOUR RESTAURANTS-----</option>
                     {renderRestaurant(restaurant)}
                 </select>

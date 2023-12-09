@@ -15,14 +15,14 @@ const Footer = () => {
             </div>
             <div className="footDiv">
                 <ul>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>Rate Us</li>
                 </ul>
             </div>
             <div className="footDiv noborder">
                 <ul>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
+                    <li>Subscribe</li>
+                    <li>Promotion</li>
                 </ul>
             </div>
             <a href="#">
