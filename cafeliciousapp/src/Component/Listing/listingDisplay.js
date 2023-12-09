@@ -9,7 +9,7 @@ const ListingDisplay = (props) => {
                 return listData.map((item) => {
                     return(
                         <div className='item' key={item._id}>
-                            <div className='row'>
+                            <div className='row rowi'>
                                 <div className='col-md-5'>
                                     <img src={item.restaurant_thumb} alt={item.restaurant_name}
                                     className='Image'/>
@@ -23,7 +23,7 @@ const ListingDisplay = (props) => {
                                     <div className='city_name'>{item.address}</div>
                                     <div className='city_name'>{item.rating_text}</div>
                                     <div className='city_name'>{item.cost}</div>
-                                    <div className='labelDiv'>
+                                    <div className='labelDiv'><br></br>
                                         <span className='label label-primary'>
                                             {item.mealTypes[0].mealtype_name}
                                         </span> &nbsp;&nbsp;
