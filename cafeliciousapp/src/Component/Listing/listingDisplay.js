@@ -24,18 +24,18 @@ const ListingDisplay = (props) => {
                                     <div className='city_name'>{item.rating_text}</div>
                                     <div className='city_name'>{item.cost}</div>
                                     <div className='labelDiv'><br></br>
-                                        <span className='label label-primary'>
+                                        <span className='btn btn-danger'>
                                             {item.mealTypes[0].mealtype_name}
                                         </span> &nbsp;&nbsp;
-                                        <span className='label label-success'>
+                                        <span className='btn btn-danger'>
                                             {item.mealTypes[1].mealtype_name}
                                         </span> 
                                     </div>
                                     <div className='labelDiv'>
-                                        <span className='label label-warning'>
+                                        <span className='btn btn-primary'>
                                             {item.foodType[0].foodtype_name}
                                         </span> &nbsp;&nbsp;
-                                        <span className='label label-danger'>
+                                        <span className='btn btn-primary'>
                                             {item.foodType[1].foodtype_name}
                                         </span> 
                                     </div>
