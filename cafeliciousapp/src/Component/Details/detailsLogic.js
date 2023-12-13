@@ -52,8 +52,12 @@ const Details = () => {
                                     <div className="icons">
                                         <img src="https://i.ibb.co/mD3jpgc/sentizied.png" alt=""/>
                                     </div>
+
                                 </div>
+
+    
                         </div>
+                        
                         <hr/>
                         <div className="col-md-12">
                             <Link className='btn btn-danger'
