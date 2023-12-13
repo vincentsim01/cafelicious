@@ -4,7 +4,7 @@ import axios from 'axios';
 import './details.css'
 
 
-const baseUrl = "http://localhost:9120/"
+const baseUrl = "http://localhost:9120"
 
 const Details = () => {
 
@@ -16,7 +16,7 @@ const Details = () => {
     let restId = searchParams.getAll('restId');
 
     const restDetail = async() => {
-        const rdata = await axios.get(`${baseUrl}/details/${restId}`);
+        const rdata = await axios.get(`${baseUrl}/details?restId=${restId}`);
         setrestDetails(rdata.data[0])
     }
 

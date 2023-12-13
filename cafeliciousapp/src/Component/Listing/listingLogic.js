@@ -14,14 +14,19 @@ const Listing = () => {
 
     //console.log(params.mealId);
     let mealId = params.mealId;
+   
 
     useEffect(() => {
         sessionStorage.setItem('mealId',mealId)
-        axios.get(`${baseUrl}/restaurants?foodType.foodtype_id=${mealId}`)
+        axios.get(`${baseUrl}/restaurants?foodTypeId=${mealId}`)
         .then((res) => {
             setRestList(res.data)
+
         })
     },[])
+
+
+
 
     return(
         <>

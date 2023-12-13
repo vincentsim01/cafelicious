@@ -18,7 +18,7 @@ const Routing = () => {
 
                     <Route path="/" element={<Main/>}>
                         <Route index element={<Home/>}/>
-                        <Route path="listing/:mealId" element={<Listing/>}/>
+                        <Route path="listing/:foodTypeId" element={<Listing/>}/>
                         <Route path="details" element={<Details/>}/>
                     </Route>
                 </Routes>
