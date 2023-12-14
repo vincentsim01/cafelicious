@@ -11,7 +11,7 @@ const Details = () => {
     let navigate = useNavigate();
     let [searchParams] = useSearchParams();
     let [restDetails,setrestDetails] = useState();
-    let [mealId] = useState(sessionStorage.getItem('mealId'));
+    let [foodTypeId] = useState(sessionStorage.getItem('foodTypeId'));
 
     let restId = searchParams.getAll('restId');
 
@@ -61,7 +61,7 @@ const Details = () => {
                         <hr/>
                         <div className="col-md-12">
                             <Link className='btn btn-danger'
-                            to={`/listing/${mealId}`}>
+                            to={`/listing/${foodTypeId}`}>
                                 Back
                             </Link> &nbsp;&nbsp;
                             {/* <button className="btn btn-success"
