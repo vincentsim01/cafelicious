@@ -10,8 +10,8 @@ const Header = () => {
             </div> */}
             <span id="menu">
             <Link to="/" className="menumenu">Home</Link>
-            <Link to="/" className="menumenu">About Us</Link>
-            <Link to="/" className="menumenu">Contact Us</Link>
+            <Link to="/about" className="menumenu">About Us</Link>
+            <Link to="/contact" className="menumenu">Contact Us</Link>
             </span>
             <div id="social">
                 <a href="#">

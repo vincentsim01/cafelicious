@@ -6,6 +6,8 @@ import Header from './Header';
 import Footer from './Footer';
 import Listing from './Listing/listingLogic';
 import Details from './Details/detailsLogic';
+import QuickAbout from './About/About';
+import QuickContact from './Contact/contact';
 
 
 const Routing = () => {
@@ -20,6 +22,8 @@ const Routing = () => {
                         <Route index element={<Home/>}/>
                         <Route path="listing/:foodTypeId" element={<Listing/>}/>
                         <Route path="details" element={<Details/>}/>
+                        <Route path="about" element={<QuickAbout/>}/>
+                        <Route path="contact" element={<QuickContact/>}/>
                     </Route>
                 </Routes>
             <Footer/>
