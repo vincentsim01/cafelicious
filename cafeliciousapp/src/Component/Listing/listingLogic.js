@@ -3,6 +3,8 @@ import './listing.css';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import ListingDisplay from './listingDisplay';
+import CostFilter from '../filters/costFilter';
+import CuisineFilter from '../filters/cuisineFilter';
 
 
 const baseUrl = "http://localhost:9120"
@@ -33,6 +35,9 @@ const Listing = () => {
             <div className="row">
                 <div id="mainListing">
                     <div id="filter">
+                        <CostFilter/>
+                        <br></br>
+                        <CuisineFilter/>
 
                     </div>
                     <ListingDisplay  listData={restList}/>
