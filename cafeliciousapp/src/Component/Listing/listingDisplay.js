@@ -29,6 +29,9 @@ const ListingDisplay = (props) => {
                                         </span> &nbsp;&nbsp;
                                         <span className='btn btn-danger'>
                                             {item.mealTypes[1].mealtype_name}
+                                        </span> &nbsp;&nbsp;
+                                        <span className='btn btn-danger'>
+                                            {item.mealTypes[2].mealtype_name}
                                         </span> 
                                     </div>
                                     <div className='labelDiv'>
@@ -37,7 +40,11 @@ const ListingDisplay = (props) => {
                                         </span> &nbsp;&nbsp;
                                         <span className='btn btn-primary'>
                                             {item.foodType[1].foodtype_name}
+                                        </span> &nbsp;&nbsp;
+                                        <span className='btn btn-primary'>
+                                            {item.foodType[2].foodtype_name}
                                         </span> 
+
                                     </div>
                                 </div>
                             </div>
