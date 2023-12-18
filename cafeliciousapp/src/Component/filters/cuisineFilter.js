@@ -6,14 +6,12 @@ const baseUrl = "http://localhost:9120";
 const CuisineFilter = (props) => {
 
     const handleFilter = (event) => {
-        let mealId = props.mealId;
+        // let foodTypeId = props.foodTypeId;
         let cuisineId = event.target.value;
         let cuisineUrl = "";
-        if(cuisineId === ""){
-            cuisineUrl = `${baseUrl}/filter/${mealId}`
-        }else{
-            cuisineUrl = `${baseUrl}/filter/${mealId}?cuisine=${cuisineId}`
-        }
+
+            cuisineUrl = `${baseUrl}/filter/${cuisineId}}`
+        
 
         axios.get(cuisineUrl)
             .then((res) => {props.restPerCuisine(res.data)})
@@ -22,25 +20,25 @@ const CuisineFilter = (props) => {
 
     return(
         <>
-            <center><h3>Cuisine Filter</h3></center>
+            <center><h3>mealType Filter</h3></center>
             <div style={{marginLeft:'15%'}} onChange={handleFilter}>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value=""/>All
+                    <input type="radio" name="cuisine" checked="checked" value="0"/>All
                 </label>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value="1"/>North Indain
+                    <input type="radio" name="cuisine" value="1"/>Breakfast
                 </label>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value="2"/>South Indian
+                    <input type="radio" name="cuisine" value="2"/>Lunch
                 </label>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value="3"/>Chinese
+                    <input type="radio" name="cuisine" value="3"/>Dinner
                 </label>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value="4"/>Fast Food
+                    <input type="radio" name="cuisine" value="4"/>Dessert
                 </label>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value="5"/>Street Food
+                    <input type="radio" name="cuisine" value="5"/>Snack
                 </label>
             </div>
         </>

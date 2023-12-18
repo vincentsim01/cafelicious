@@ -16,6 +16,7 @@ const Listing = () => {
 
     //console.log(params.mealId);
     let foodTypeId = params.foodTypeId;
+    // let mealId = params.mealId;
    
 
     useEffect(() => {
@@ -25,8 +26,13 @@ const Listing = () => {
             setRestList(res.data)
 
         })
-    },[])
+    },[]);
 
+
+
+    const setDataPerFilter = (data) => {
+        setRestList(data)
+    }
 
 
 
@@ -35,9 +41,10 @@ const Listing = () => {
             <div className="row">
                 <div id="mainListing">
                     <div id="filter">
-                        <CostFilter/>
+                    {/* <CuisineFilter restPerCuisine={(data) => {setDataPerFilter(data)}}/> */}
                         <br></br>
-                        <CuisineFilter/>
+                        {/* <CostFilter restPerCost={(data) => {setDataPerFilter(data)}} mealId={mealId}/> */}
+
 
                     </div>
                     <ListingDisplay  listData={restList}/>
