@@ -6,15 +6,15 @@ const baseUrl = "http://localhost:9120";
 const CostFilter = (props) => {
 
     const handleFilter = (event) => {
-        let mealId = props.mealId;
+        let foodtypeId = props.foodTypeId;
         let cost = (event.target.value).split('-');
         let lcost = cost[0];
         let hcost = cost[1]
         let costUrl = "";
         if(event.target.value === ""){
-            costUrl = `${baseUrl}/filter/${mealId}`
+            costUrl = `${baseUrl}/filtery/${foodtypeId}`
         }else{
-            costUrl = `${baseUrl}/filter/${mealId}?lcost=${lcost}&hcost=${hcost}`
+            costUrl = `${baseUrl}/filter/${foodtypeId}?lcost=${lcost}&hcost=${hcost}`
         }
 
         axios.get(costUrl)
@@ -30,19 +30,19 @@ const CostFilter = (props) => {
                     <input type="radio" name="cuisine" value=""/>All
                 </label>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value="0-300"/>0-300
+                    <input type="radio" name="cuisine" value="0.1-1"/>0-1
                 </label>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value="301-600"/>301-600
+                    <input type="radio" name="cuisine" value="1.1-3"/>1-3
                 </label>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value="601-900"/>601-900
+                    <input type="radio" name="cuisine" value="3.1-6"/>3.1-6
                 </label>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value="901-1200"/>901-1200
+                    <input type="radio" name="cuisine" value="6.1-10"/>6.1-10
                 </label>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value="1201-5000"/>1201-5000
+                    <input type="radio" name="cuisine" value="10-15"/>10-15
                 </label>
             </div>
         </>

@@ -43,7 +43,7 @@ const Listing = () => {
                     <div id="filter">
                     <CuisineFilter foodTypeId={foodTypeId} restPerCuisine={(data) => {setDataPerFilter(data)}}/>
                         <br></br>
-                        {/* <CostFilter restPerCost={(data) => {setDataPerFilter(data)}} mealId={mealId}/> */}
+                        <CostFilter restPerCost={(data) => {setDataPerFilter(data)}} foodTypeId={foodTypeId} />
 
 
                     </div>
