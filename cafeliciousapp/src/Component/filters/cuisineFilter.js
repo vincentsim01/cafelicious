@@ -6,14 +6,23 @@ const baseUrl = "http://localhost:9120";
 const CuisineFilter = (props) => {
 
     const handleFilter = (event) => {
-        // let foodTypeId = props.foodTypeId;
-        let cuisineId = event.target.value;
-        let cuisineUrl = "";
+        let foodTypeId = props.foodTypeId;
+        let mealId = event.target.value;
+        let mealUrl = "";
 
-            cuisineUrl = `${baseUrl}/filter/${cuisineId}}`
+
+
+
+
+
+            if(mealId === ""){
+                mealUrl = `${baseUrl}/filter/${mealId}`
+            }else{
+                mealUrl = `${baseUrl}/filter/${mealId}?foodtypeId=${foodTypeId}`
+            }
         
 
-        axios.get(cuisineUrl)
+        axios.get(mealUrl)
             .then((res) => {props.restPerCuisine(res.data)})
 
     }
