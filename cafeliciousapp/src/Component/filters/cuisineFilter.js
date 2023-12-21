@@ -24,6 +24,13 @@ const CuisineFilter = (props) => {
                 console.log("this is mealurl when mealID is zero: "+mealUrl)
 
             }
+
+            // else if(err){
+            //     mealUrl=`${baseUrl}/restaurants?foodTypeId=${foodTypeId}`
+            //     console.log("this is when error: ")
+
+            // }
+            
             
             
             
