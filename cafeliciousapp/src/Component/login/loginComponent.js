@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header2 from '../Header2';
 
-const url = "http://localhost:5001/"
+const url = "http://localhost:5001/";
 
 const Login = () => {
 

@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../Header2';
 
-const url = process.env.REACT_APP_LOGIN_API_URL
+const url = "http://localhost:5001/";
 
 const Regsiter = () => {
 
