@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import './QuickSearch.css';
 import QuickDisplay  from './QuickDisplay';
+import Header2 from '../Header2';
 
 const baseUrl = "http://localhost:9120";
 const QuickSearch = () => {
@@ -18,6 +19,7 @@ const QuickSearch = () => {
 
     return(
         <div id="quickSearch">
+            <Header2/>
             <span className="quickHeading">Cafe Quick Search</span><br></br>
             <span className="quickSubHeading">Find Your Favourite Type Of Food</span>
             <QuickDisplay mealData={mealType}/>
