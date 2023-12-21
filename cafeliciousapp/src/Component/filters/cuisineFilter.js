@@ -13,13 +13,26 @@ const CuisineFilter = (props) => {
 
 
 
-
+            console.log("this is the new mealID"+mealId);
+            console.log(foodTypeId);
 
             if(mealId === ""){
                 mealUrl = `${baseUrl}/filter/${mealId}`
-            }else{
-                mealUrl = `${baseUrl}/filter/${mealId}?foodtypeId=${foodTypeId}`
             }
+            else if(mealId == 0){
+                mealUrl=`${baseUrl}/restaurants?foodTypeId=${foodTypeId}`
+                console.log("this is mealurl when mealID is zero: "+mealUrl)
+
+            }
+            
+            
+            
+            else{
+                mealUrl = `${baseUrl}/filter/${mealId}?foodtypeId=${foodTypeId}`
+                // mealUrl = `${baseUrl}/filter/${mealId}`
+            }
+
+        
         
 
         axios.get(mealUrl)
