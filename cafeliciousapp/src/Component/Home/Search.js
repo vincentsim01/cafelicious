@@ -1,10 +1,10 @@
 import React,{useState,useEffect} from 'react';
 import './Search.css';
+import Header2 from '../Header2';
 
 const baseUrl = "http://localhost:9120"
 const blaUrl=process.env.REACT_APP_API_URL;
 
-console.log("this is the blaURL:"+blaUrl);
 
 const Search = () => {
 
@@ -49,9 +49,12 @@ const Search = () => {
         if(data){
             return data.map((item) => {
                 return(
+                    <>
+
                     <option key={item.restaurant_id} value={item.restaurant_id}>
                         {item.restaurant_name} | {item.address}
                     </option>
+                    </>
                 )
             })
         }

@@ -5,6 +5,7 @@ import axios from 'axios';
 import ListingDisplay from './listingDisplay';
 import CostFilter from '../filters/costFilter';
 import CuisineFilter from '../filters/cuisineFilter';
+import Header2 from '../Header2';
 
 
 const baseUrl = "http://localhost:9120"
@@ -38,6 +39,7 @@ const Listing = () => {
 
     return(
         <>
+        <Header2/>
             <div className="row">
                 <div id="mainListing">
                     <div id="filter">

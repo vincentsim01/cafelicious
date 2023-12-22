@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { useNavigate } from 'react-router-dom';
-import Header from '../Header2';
+import Header2 from '../Header2';
 
 const url = "http://localhost:5001/";
 
@@ -42,12 +42,12 @@ const Register = () => {
 
     return(
         <>
-            {/* <Header2/> */}
+            <Header2/>
             <div className="container">
                 <hr/>
                 <div className="panel panel-info">
                     <div className="panel-heading">
-                        <h3>Regsiter</h3>
+                        <h3>Register</h3>
                     </div>
                     <div className='panel-body'>
                         <div className='row'>

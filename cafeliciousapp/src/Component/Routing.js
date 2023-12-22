@@ -17,7 +17,7 @@ const Routing = () => {
     return(
         <>
             <BrowserRouter>
-            <Header/>
+            {/* <Header/> */}
      
 
                 <Routes>

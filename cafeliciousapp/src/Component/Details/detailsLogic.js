@@ -2,6 +2,8 @@ import React,{useState,useEffect} from 'react';
 import {useParams,useSearchParams,useNavigate,Link, Navigate} from 'react-router-dom';
 import axios from 'axios';
 import './details.css'
+import Header2 from '../Header2';
+
 
 
 const baseUrl = "http://localhost:9120"
@@ -35,6 +37,7 @@ const Details = () => {
         if(restDetails){
             return(
                 <>
+                <Header2/>
                    <div className='tileImage'>
                     <div className='imageClass'>
                         <img src={restDetails.restaurant_thumb}

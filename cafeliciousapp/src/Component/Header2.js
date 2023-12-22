@@ -65,10 +65,14 @@ const Header2 = () => {
 
     return(
         <header>
-            <div id="brand">
+            {/* <div id="brand">
                 Developer Funnel
-            </div>
-            <Link to="/">Home</Link>
+            </div> */}
+            <span id="menu">
+            <Link to="/" className="menumenu">Home</Link>
+            <Link to="/about" className="menumenu">About Us</Link>
+            <Link to="/contact" className="menumenu">Contact Us</Link>
+            </span>
             <div id="social">
                 {conditionalHeader()}
             </div>
