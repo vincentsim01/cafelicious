@@ -3,7 +3,7 @@ import axios from 'axios';
 import DisplayOrder from './DisplayOrder';
 import Header from '../Header';
 
-const baseUrl = process.env.REACT_APP_POST_API_URL;
+const baseUrl = "localhost:9120";
 
 const ViewOrder = () => {
     const [orders,setOrder] = useState();
@@ -16,7 +16,7 @@ const ViewOrder = () => {
 
     return(
         <>
-            <Header/>
+            {/* <Header/> */}
             <DisplayOrder orderData={orders}/>
         </>
     )

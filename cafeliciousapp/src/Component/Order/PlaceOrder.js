@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { useParams,useNavigate} from 'react-router-dom';
 import Header from '../Header';
 
-const baseUrl = process.env.REACT_APP_POST_API_URL;
+const baseUrl = "http://localhost:9120";
 
 const PlaceOrder = () => {
     let params = useParams();

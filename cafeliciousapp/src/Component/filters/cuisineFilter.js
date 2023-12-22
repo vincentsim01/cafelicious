@@ -13,15 +13,14 @@ const CuisineFilter = (props) => {
 
 
 
-            console.log("this is the new mealID"+mealId);
-            console.log(foodTypeId);
+    
 
             if(mealId === ""){
                 mealUrl = `${baseUrl}/filter/${mealId}`
             }
             else if(mealId == 0){
                 mealUrl=`${baseUrl}/restaurants?foodTypeId=${foodTypeId}`
-                console.log("this is mealurl when mealID is zero: "+mealUrl)
+      
 
             }
 
