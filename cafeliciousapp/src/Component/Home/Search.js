@@ -66,6 +66,7 @@ const Search = () => {
  
     return(
         <div id="search">
+            <Header2/>
            <div className="logo">
                <span><div id="zomatologocontainer"><img id="zomatologo" src="https://i.ibb.co/7p9ByZK/cafelicious-circle.png"></img></div></span>
 
