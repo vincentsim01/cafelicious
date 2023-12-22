@@ -49,7 +49,7 @@ const Login = () => {
 
     return(
         <>
-            <Header2/>
+            {/* <Header2/> */}
             <div className="container">
                 <hr/>
                 <div className="panel panel-danger">

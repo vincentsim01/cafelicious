@@ -8,6 +8,9 @@ import Listing from './Listing/listingLogic';
 import Details from './Details/detailsLogic';
 import QuickAbout from './About/About';
 import QuickContact from './Contact/contact';
+import PlaceOrder from './Order/PlaceOrder';
+import Register from './login/registerComponent';
+import Login from './login/loginComponent';
 
 
 const Routing = () => {
@@ -25,6 +28,9 @@ const Routing = () => {
                         <Route path="details" element={<Details/>}/>
                         <Route path="about" element={<QuickAbout/>}/>
                         <Route path="contact" element={<QuickContact/>}/>
+                        <Route path="placeOrder/:restName" element={<PlaceOrder/>}/>
+                        <Route path="login" element={<Login/>}/>
+                        <Route path="Register" element={<Register/>}/>
                     </Route>
                 </Routes>
             <Footer/>

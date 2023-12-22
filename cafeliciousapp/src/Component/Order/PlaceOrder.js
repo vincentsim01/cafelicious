@@ -46,7 +46,7 @@ const PlaceOrder = () => {
 
     return(
         <>
-            <Header/>
+            {/* <Header/> */}
             <div className="container">
                 <hr/>
                 <div className="panel panel-primary">

@@ -4,7 +4,7 @@ import Header from '../Header2';
 
 const url = "http://localhost:5001/";
 
-const Regsiter = () => {
+const Register = () => {
 
     let navigate = useNavigate();
 
@@ -42,7 +42,7 @@ const Regsiter = () => {
 
     return(
         <>
-            <Header2/>
+            {/* <Header2/> */}
             <div className="container">
                 <hr/>
                 <div className="panel panel-info">
@@ -84,4 +84,4 @@ const Regsiter = () => {
     )
 }
 
-export default Regsiter
+export default Register
