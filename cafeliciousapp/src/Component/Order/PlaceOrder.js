@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { useParams,useNavigate} from 'react-router-dom';
-import Header from '../Header';
+import Header2 from '../Header2';
 
 const baseUrl = "http://localhost:9120";
 
@@ -46,7 +46,7 @@ const PlaceOrder = () => {
 
     return(
         <>
-            {/* <Header/> */}
+            <Header2/>
             <div className="container">
                 <hr/>
                 <div className="panel panel-primary">
