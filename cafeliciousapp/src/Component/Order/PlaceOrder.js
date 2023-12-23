@@ -8,16 +8,18 @@ const PlaceOrder = () => {
     let params = useParams();
     let navigate = useNavigate();
 
-    let sessionData = sessionStorage.getItem('userInfo');
-    let data = JSON.parse(sessionData)
+    // let sessionData = sessionStorage.getItem('userInfo');
+    // let data = JSON.parse(sessionData)
 
     const initialValues = {
         id:Math.floor(Math.random() * 1000000),
         rest_name: params.restName,
-        name:data.name,
-        email:data.email,
+        // name:data.name,
+        // email:data.email,
+        name:"Bob",
+        email:"bob@gmail.com",
         cost:Math.floor(Math.random()*1000),
-        phone:data.phone,
+        // phone:data.phone,
         address:"Hon 12 sec 34"
     }
 
