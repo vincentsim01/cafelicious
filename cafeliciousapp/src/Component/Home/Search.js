@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import './Search.css';
 import Header2 from '../Header2';
+import {Link} from 'react-router-dom'
 
 const baseUrl = "http://localhost:9120"
 const blaUrl=process.env.REACT_APP_API_URL;
@@ -20,6 +21,17 @@ const Search = () => {
 
         })
     },[])
+
+
+
+
+
+
+// <Link className='btn btn-danger'
+// to={`/listing/${foodTypeId}`}>
+//     Back
+// </Link> &nbsp;&nbsp;
+
 
     const renderCity = (data) => {
         if(data){
@@ -60,6 +72,8 @@ const Search = () => {
         }
     }
 
+    const justshow=() => {}
+
 
 
 
@@ -85,6 +99,13 @@ const Search = () => {
                     <option>-----SELECT YOUR RESTAURANTS-----</option>
                     {renderRestaurant(restaurant)}
                 </select>
+
+                <Link to={`/details?restId=1`}>
+                        <button>
+                             Go
+                        </button>
+                </Link>
+
            </div>
         </div>
     )
