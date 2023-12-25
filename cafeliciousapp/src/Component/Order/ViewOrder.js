@@ -46,7 +46,7 @@ const ViewOrder = () => {
 
     return(
         <>
-                        <Header2/>
+            <Header2/>
 
             <DisplayOrder orderData={orders}/>
         </>
