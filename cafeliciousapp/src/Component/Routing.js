@@ -12,6 +12,8 @@ import PlaceOrder from './Order/PlaceOrder';
 import Register from './login/registerComponent';
 import Login from './login/loginComponent';
 import ViewOrder from './Order/ViewOrder'
+import QuickFAQ from './FAQ/faq';
+import QuickPromotion from './promotion/promotion';
 
 
 const Routing = () => {
@@ -33,6 +35,10 @@ const Routing = () => {
                         <Route path="login" element={<Login/>}/>
                         <Route path="Register" element={<Register/>}/>
                         <Route path="ViewOrder" element={<ViewOrder/>}/>
+                        <Route path="FAQ" element={<QuickFAQ/>}/>
+                        <Route path="promotion" element={<QuickPromotion/>}/>
+
+
                     </Route>
                 </Routes>
             <Footer/>
