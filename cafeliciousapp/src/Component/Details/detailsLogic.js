@@ -70,6 +70,9 @@ const Details = () => {
                             to={`/listing/${foodTypeId}`}>
                                 Back
                             </Link> &nbsp;&nbsp;
+                            <Link to={`/menu`} class="btn btn-info">
+                            See Menu
+                            </Link>&nbsp;&nbsp;
                             <button className="btn btn-success"
                             onClick={proceed}>
                                 Proceed

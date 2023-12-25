@@ -14,6 +14,7 @@ import Login from './login/loginComponent';
 import ViewOrder from './Order/ViewOrder'
 import QuickFAQ from './FAQ/faq';
 import QuickPromotion from './promotion/promotion';
+import Menu from './menu/menu';
 
 
 const Routing = () => {
@@ -37,6 +38,7 @@ const Routing = () => {
                         <Route path="ViewOrder" element={<ViewOrder/>}/>
                         <Route path="FAQ" element={<QuickFAQ/>}/>
                         <Route path="promotion" element={<QuickPromotion/>}/>
+                        <Route path="Menu" element={<Menu/>}/>
 
 
                     </Route>
