@@ -17,7 +17,7 @@ const PlaceOrder = () => {
         // name:data.name,
         // email:data.email,
         name:"Bob",
-        email:"bob@gmail.com",
+        email:"Bob@gmail.com",
         cost:Math.floor(Math.random()*1000),
         // phone:data.phone,
         address:"Hon 12 sec 34"
