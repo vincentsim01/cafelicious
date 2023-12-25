@@ -64,13 +64,6 @@ const Search = () => {
           };
 
 
-        // let theId=restaurant.id;
-        // console.log(theId);
-      
-
-        //   setSelectedValue(restaurant);
-        //   console.log(selectedValue);
-        
     
 
 
@@ -124,7 +117,7 @@ const Search = () => {
                 </select>
 
                 <Link to={`/details?restId=${selectedValue}`}>
-                        <button>
+                        <button className="gobutton">
                              Go
                         </button>
                 </Link>
