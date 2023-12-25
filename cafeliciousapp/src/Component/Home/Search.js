@@ -12,6 +12,7 @@ const Search = () => {
     const [title] = useState(' Cafe Collections');
     const [location,setLocation] = useState([]);
     const [restaurant,setRestaurant] = useState([]);
+    const [selectedValue, setSelectedValue] = useState('');
     
     useEffect(() => {
         fetch(`${baseUrl}/location`,{method:'GET'})
@@ -57,12 +58,30 @@ const Search = () => {
     }
 
 
+
+        const handleSelectChange = (event) => {
+            setSelectedValue(event.target.value);
+          };
+
+
+        // let theId=restaurant.id;
+        // console.log(theId);
+      
+
+        //   setSelectedValue(restaurant);
+        //   console.log(selectedValue);
+        
+    
+
+
+
+
     const renderRestaurant = (data) => {
         if(data){
             return data.map((item) => {
                 return(
                     <>
-
+ 
                     <option key={item.restaurant_id} value={item.restaurant_id}>
                         {item.restaurant_name} | {item.address}
                     </option>
@@ -70,9 +89,13 @@ const Search = () => {
                 )
             })
         }
-    }
 
-    const justshow=() => {}
+
+
+        
+
+
+    }
 
 
 
@@ -95,12 +118,12 @@ const Search = () => {
                    <option>-----SELECT YOUR CITY-----</option>
                    {renderCity(location)}
                 </select>
-                <select className="selectstyle">
+                <select className="selectstyle" onChange={handleSelectChange}>
                     <option>-----SELECT YOUR RESTAURANTS-----</option>
                     {renderRestaurant(restaurant)}
                 </select>
 
-                <Link to={`/details?restId=1`}>
+                <Link to={`/details?restId=${selectedValue}`}>
                         <button>
                              Go
                         </button>
