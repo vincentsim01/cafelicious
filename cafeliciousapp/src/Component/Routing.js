@@ -38,7 +38,7 @@ const Routing = () => {
                         <Route path="ViewOrder" element={<ViewOrder/>}/>
                         <Route path="FAQ" element={<QuickFAQ/>}/>
                         <Route path="promotion" element={<QuickPromotion/>}/>
-                        <Route path="Menu" element={<Menu/>}/>
+                        <Route path="Menu/:restaurant_id" element={<Menu/>}/>
 
 
                     </Route>
