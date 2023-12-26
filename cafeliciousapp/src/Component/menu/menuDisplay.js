@@ -10,9 +10,20 @@ const MenuDisplay=(props)=>{
                 // console.log("This is ListData"+listData);
                 return listData.map((item) => {
                     return(
-                        <div>
+                        <div class="container-fluid menucontainer">
+                            <div class="col-4">
 
-                        <h1>Food Name:  {item.menu_name}</h1>
+                                <img src={item.menu_image} className="menuthumb"></img>
+
+                            </div>
+                            <div class="col-8">
+
+                                <div className="menuparts">Food Name:  {item.menu_name}</div>
+                                <div className="menuparts">Description:  {item.description}</div>
+
+                            </div>
+
+
     
                         </div>
                     )
@@ -40,11 +51,20 @@ const MenuDisplay=(props)=>{
         if(restData){
             if(restData.length > 0 ){
                 // console.log("This is ListData"+listData);
-                return restData.map((item) => {
+                return restData.map((item2) => {
                     return(
-                        <h1>
-                            {item.restaurant_name}
-                        </h1>
+
+
+                                <div>
+
+                                    {item2.restaurant_name}
+                      
+
+
+                                </div>
+                            
+                                
+         
                     )
             
                 })
@@ -59,7 +79,10 @@ const MenuDisplay=(props)=>{
     return(
         <>
         <div id="content">
-            This is the menu from cafe: {restaurantData(props)}
+
+            <span id="thisisthe">This is the menu from cafe: {restaurantData(props)}</span>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;<br/>
             {renderData(props)}
             
         </div>

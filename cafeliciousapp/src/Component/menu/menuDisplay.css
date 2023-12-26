@@ -4,5 +4,33 @@
 }
 
 #content{
-    height:600px;
+    
+    background-color: brown;
+    padding:10px;
+    width:100%;
+    margin:20px;
+}
+
+.menucontainer{
+    border:1px solid black;
+    height:500px;
+    width:100%;
+    background-color: honeydew;
+    display:block;
+    margin:5px;
+}
+
+.menuthumb{
+    width:550px;
+    margin:20px;
+}
+
+#thisisthe{
+    border:1px solid pink;
+
+}
+
+.menuparts{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: large;
 }
