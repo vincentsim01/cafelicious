@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Header2 from '../Header2';
 import MenuDisplay from './menuDisplay';
+import './menuDisplay.css';
 
 const baseUrl = "http://localhost:9120";
 
@@ -12,6 +13,7 @@ const Menu = () => {
     const [menuz,setmenuz]=useState();
 
     let restaurant_Id=params.restaurant_id;
+    let [restDetails,setrestDetails] = useState();
 
 
     console.log("thi is restaurant id: "+restaurant_Id);
@@ -39,6 +41,20 @@ const Menu = () => {
         // })
     },[]);
 
+    useEffect(() => {        
+        fetch(`${baseUrl}/details?restId=${restaurant_Id}`,{method:'GET'})
+            .then((res) =>  res.json())
+            .then((data) => {
+                setrestDetails(data);
+
+    })},[]);
+
+
+    // const restDetail = async() => {
+    //     const rdata = await axios.get(`${baseUrl}/details?restId=${restaurant_Id}`);
+    //     setrestDetails(rdata.data[0])
+    // }
+
 console.log("This is the menuz "+menuz);
 
 
@@ -48,8 +64,9 @@ console.log("This is the menuz "+menuz);
     return(
         <>
         <Header2/>
-        <h1>This is menu</h1>
-        <MenuDisplay listData={menuz}/>
+        <div id="theContainer">
+            <MenuDisplay listData={menuz} restData={restDetails}/>
+        </div>
   
         
         

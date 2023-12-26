@@ -36,11 +36,30 @@ const MenuDisplay=(props)=>{
     }
 
 
+    const restaurantData = ({restData})=>{
+        if(restData){
+            if(restData.length > 0 ){
+                // console.log("This is ListData"+listData);
+                return restData.map((item) => {
+                    return(
+                        <h1>
+                            {item.restaurant_name}
+                        </h1>
+                    )
+            
+                })
+            }
+        }
+
+    }
+
+
 
 
     return(
         <>
         <div id="content">
+            This is the menu from cafe: {restaurantData(props)}
             {renderData(props)}
             
         </div>
