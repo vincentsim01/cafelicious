@@ -30,6 +30,8 @@ const MenuDisplay=(props)=>{
                                 <div className="menuparts">Food Name:  {item.menu_name}</div>
                                 <div className="menuparts">Description:  {item.description}</div>
 
+                                <Link to={`/details?restId=${item.restaurant_id}`} class="btn btn-info">Back to {restaurantData(props)} Page</Link>
+
                             </div>
 
 
@@ -89,7 +91,7 @@ const MenuDisplay=(props)=>{
         <>
         <div id="contenta">
 
-            <span id="thisisthe">This is the menu from cafe: <Link to={`/details?restId=${restId}`}>{restaurantData(props)}</Link></span>
+            {/* <span id="thisisthe">This is the menu from cafe: <Link to={`/details?restId=${restId}`}>{restaurantData(props)}</Link></span> */}
 
             &nbsp;&nbsp;&nbsp;&nbsp;<br/>
             {renderData(props)}

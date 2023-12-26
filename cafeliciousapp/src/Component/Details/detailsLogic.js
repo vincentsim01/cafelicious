@@ -17,17 +17,23 @@ const Details = () => {
     // let [restId] = useState(sessionStorage.getItem('restId'));
     let restId2 = useState(sessionStorage.getItem('restId2'));
 
+    console.log("this is restId2"+restId2);
+
+    // if(restId==""){
+    //     restId=restId2;
+    // }
 
 
 
-    const restDetail2 = async() => {
-        const rdata2 = await axios.get(`${baseUrl}/details?restId=${restId2}`);
-        setrestDetails(rdata2.data[0])
-    }
 
-    useEffect(() => {
-        restDetail2()  
-    },[]);
+    // const restDetail2 = async() => {
+    //     const rdata2 = await axios.get(`${baseUrl}/details?restId=${restId2}`);
+    //     setrestDetails(rdata2.data[0])
+    // }
+
+    // useEffect(() => {
+    //     restDetail2()  
+    // },[]);
 
 
 
