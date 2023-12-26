@@ -1,9 +1,9 @@
 #theContainer{
-    height:500px;
+
     background-color: chocolate;
 }
 
-#content{
+#contenta{
     
     background-color: brown;
     padding:10px;
@@ -21,7 +21,7 @@
 }
 
 .menuthumb{
-    width:550px;
+    width:500px;
     margin:20px;
 }
 

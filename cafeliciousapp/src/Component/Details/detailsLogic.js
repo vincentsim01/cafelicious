@@ -14,6 +14,26 @@ const Details = () => {
     let [searchParams] = useSearchParams();
     let [restDetails,setrestDetails] = useState();
     let [foodTypeId] = useState(sessionStorage.getItem('foodTypeId'));
+    // let [restId] = useState(sessionStorage.getItem('restId'));
+    let restId2 = useState(sessionStorage.getItem('restId2'));
+
+
+
+
+    const restDetail2 = async() => {
+        const rdata2 = await axios.get(`${baseUrl}/details?restId=${restId2}`);
+        setrestDetails(rdata2.data[0])
+    }
+
+    useEffect(() => {
+        restDetail2()  
+    },[]);
+
+
+
+
+
+
 
     let restId = searchParams.getAll('restId');
 

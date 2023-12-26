@@ -22,6 +22,8 @@ const Menu = () => {
 
 
 
+
+
         fetch(`${baseUrl}/menu/${restaurant_Id}`,{method:'GET'})
         .then((res) =>  res.json())
         .then((data) => {
@@ -41,7 +43,8 @@ const Menu = () => {
         // })
     },[]);
 
-    useEffect(() => {        
+    useEffect(() => {  
+        sessionStorage.setItem('restId2',restaurant_Id)      
         fetch(`${baseUrl}/details?restId=${restaurant_Id}`,{method:'GET'})
             .then((res) =>  res.json())
             .then((data) => {

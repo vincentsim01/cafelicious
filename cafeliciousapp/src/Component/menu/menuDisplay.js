@@ -1,6 +1,15 @@
 import React from 'react';
+import {useSearchParams,Link} from 'react-router-dom';
 
 const MenuDisplay=(props)=>{
+
+    let [searchParams] = useSearchParams();
+
+    let restId = searchParams.getAll('restId');
+
+    
+    sessionStorage.setItem('restId2',restId);      
+
 
 
     const renderData = ({listData}) => {
@@ -78,9 +87,9 @@ const MenuDisplay=(props)=>{
 
     return(
         <>
-        <div id="content">
+        <div id="contenta">
 
-            <span id="thisisthe">This is the menu from cafe: {restaurantData(props)}</span>
+            <span id="thisisthe">This is the menu from cafe: <Link to={`/details?restId=${restId}`}>{restaurantData(props)}</Link></span>
 
             &nbsp;&nbsp;&nbsp;&nbsp;<br/>
             {renderData(props)}
