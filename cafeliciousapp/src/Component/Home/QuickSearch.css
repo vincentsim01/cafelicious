@@ -40,8 +40,13 @@
       margin-top:3%;
       box-shadow:10px 20px 10px gray;
       float: left;
-      animation:dance 15s;
+      animation:dancer 5s;
       border-radius:20px;
+  }
+
+  .tileContainer:hover{
+    transform: scale(1.5);
+    background-color: orange;
   }
   
   @keyframes dance {
@@ -64,6 +69,27 @@
           transform: rotate(-5deg);
       }
   }
+
+  @keyframes dancer {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    40%{
+        transform: scale(1.15);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    75%{
+        transform: scale(1.15);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
   
   
   .tileContainer:hover{
