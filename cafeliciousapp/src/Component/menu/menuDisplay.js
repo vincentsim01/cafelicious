@@ -91,7 +91,7 @@ const MenuDisplay=(props)=>{
         <>
         <div id="contenta">
 
-            {/* <span id="thisisthe">This is the menu from cafe: <Link to={`/details?restId=${restId}`}>{restaurantData(props)}</Link></span> */}
+            <span id="thisisthe">This is the menu from cafe: {restaurantData(props)}</span>
 
             &nbsp;&nbsp;&nbsp;&nbsp;<br/>
             {renderData(props)}

@@ -13,7 +13,7 @@
 
 .menucontainer{
     border:1px solid black;
-    height:500px;
+    height:600px;
     width:100%;
     background-color: honeydew;
     display:block;
@@ -21,7 +21,7 @@
 }
 
 .menuthumb{
-    width:500px;
+    width:250px;
     margin:20px;
 }
 
