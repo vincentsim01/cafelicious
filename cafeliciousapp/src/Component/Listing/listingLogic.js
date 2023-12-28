@@ -19,7 +19,7 @@ const Listing = () => {
     let foodTypeId = params.foodTypeId;
 
 
-    console.log("this is foodTypeId "+foodTypeId);
+    // console.log("this is foodTypeId "+foodTypeId);
     // let mealId = params.mealId;
    
 

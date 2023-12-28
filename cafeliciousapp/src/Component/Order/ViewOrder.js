@@ -8,8 +8,8 @@ const baseUrl = "http://localhost:9120";
 
 const ViewOrder = () => {
     const [orders,setOrder] = useState('');
-    // let sessionData = sessionStorage.getItem('userInfo');
-    // let data = JSON.parse(sessionData)
+    let sessionData = sessionStorage.getItem('userInfo');
+    let data = JSON.parse(sessionData)
 
     const emaili="Bob@gmail.com";
 

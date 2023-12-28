@@ -10,8 +10,8 @@ const Login = () => {
     const [message,setMessage] = useState('')
 
     const initialValues = {
-        email:'arpit@gmail.com',
-        password:"987654322"
+        email:'arthur@gmail.com',
+        password:"Arthur"
     }
 
     const [values,setValues] = useState(initialValues);

@@ -17,7 +17,7 @@ const Details = () => {
     // let [restId] = useState(sessionStorage.getItem('restId'));
     let restId2 = useState(sessionStorage.getItem('restId2'));
 
-    console.log("this is restId2"+restId2);
+    // console.log("this is restId2"+restId2);
 
     // if(restId==""){
     //     restId=restId2;
@@ -96,7 +96,7 @@ const Details = () => {
                             to={`/listing/${foodTypeId}`}>
                                 Back
                             </Link> &nbsp;&nbsp;
-                            <Link to={`/menu/${restId}`} class="btn btn-info">
+                            <Link to={`/menu/${restId}`} className="btn btn-info">
                             See Menu
                             </Link>&nbsp;&nbsp;
                             <button className="btn btn-success"

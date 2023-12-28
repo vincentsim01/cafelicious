@@ -16,7 +16,7 @@ const Menu = () => {
     let [restDetails,setrestDetails] = useState();
 
 
-    console.log("thi is restaurant id: "+restaurant_Id);
+    // console.log("thi is restaurant id: "+restaurant_Id);
 
     useEffect(() => {
 
@@ -58,7 +58,7 @@ const Menu = () => {
     //     setrestDetails(rdata.data[0])
     // }
 
-console.log("This is the menuz "+menuz);
+// console.log("This is the menuz "+menuz);
 
 
 
