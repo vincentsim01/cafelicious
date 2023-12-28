@@ -1,21 +1,86 @@
 import React, { useState,useEffect } from 'react';
 import Header2 from '../Header2';
+import axios from 'axios';
 
-const QuickContact = () => {
+const baseUrl="http://localhost:6000/api/auth"
+
+
+    const ContactForm = () => {
+
+      const initialValues = {
+        name:'Ronnie',
+        email:'ronnie@gmail.com',
+        phone:"333222",
+        message:"Love is the most powerful force on earth"
+    }
+      const [values,setValues] = useState(initialValues);
+
+      const handleInputChange = (e) => {
+          const {name,value} = e.target;
+          setValues({
+              ...values,
+              [name]:value
+          })
+      }
+
+      const checkout = () => {
+        // console.log(values)
+        fetch(`${baseUrl}/Contactform`,{
+            method: 'POST',
+            headers:{
+                'accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify(values)
+        })
+        .then("Thank you for your feedback we will reply in 3 working days");
+    }
+
+  
 
 
 
     return(
         <>
                     <Header2/>
-        <div id="quickSearch">
+        <div id="contactContainer">
 
             <span className="ContactHeader">Contact Cafelicious</span><br></br>
             <span className="ContactSubHeader">Contact Cafelicious Here</span>
+
+            <div className='panel-body'>
+                        <div className='row'>
+                            <div className='col-md-6 form-group'>
+                                <label for="fname" className='control-label'>Name</label>
+                                <input className='form-control' id="fname"
+                                name="name" value={values.name} onChange={handleInputChange}/>
+                            </div>
+                            <div className='col-md-6 form-group'>
+                                <label for="email" className='control-label'>Email</label>
+                                <input className='form-control' id="email"
+                                name="email" value={values.email} onChange={handleInputChange}/>
+                            </div>
+                            <div className='col-md-6 form-group'>
+                                <label for="phone" className='control-label'>Phone</label>
+                                <input className='form-control' id="phone"
+                                name="phone" value={values.phone} onChange={handleInputChange}/>
+                            </div>
+                            <div className='col-md-6 form-group'>
+                                <label for="message" className='control-label'>Message</label>
+                                <input className='form-control' id="message"
+                                name="message" value={values.message} onChange={handleInputChange}/>
+                            </div>
+                            
+                        </div>
+                        <button className='btn btn-success' onClick={checkout}>
+                                Register
+                        </button>
+                    </div>
+
 
         </div>
         </>
     )
 }
 
-export default QuickContact;
+export default ContactForm;
