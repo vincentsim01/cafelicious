@@ -1,17 +1,20 @@
 import React, { useState,useEffect } from 'react';
 import Header2 from '../Header2';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const baseUrl="http://localhost:6000/api/auth"
+const baseUrl="http://localhost:5007/api/auth";
 
 
     const ContactForm = () => {
+
+      let navigate = useNavigate();
 
       const initialValues = {
         name:'Ronnie',
         email:'ronnie@gmail.com',
         phone:"333222",
-        message:"Love is the most powerful force on earth"
+        message:"Hi I have an inquiry"
     }
       const [values,setValues] = useState(initialValues);
 
@@ -23,8 +26,11 @@ const baseUrl="http://localhost:6000/api/auth"
           })
       }
 
+
+      console.log("these are the values"+values);
+
       const checkout = () => {
-        // console.log(values)
+
         fetch(`${baseUrl}/Contactform`,{
             method: 'POST',
             headers:{
@@ -32,8 +38,9 @@ const baseUrl="http://localhost:6000/api/auth"
                 'Content-Type':'application/json'
             },
             body:JSON.stringify(values)
+
         })
-        .then("Thank you for your feedback we will reply in 3 working days");
+        .then(console.log("Success"));
     }
 
   
@@ -73,7 +80,7 @@ const baseUrl="http://localhost:6000/api/auth"
                             
                         </div>
                         <button className='btn btn-success' onClick={checkout}>
-                                Register
+                                Send
                         </button>
                     </div>
 
@@ -83,4 +90,4 @@ const baseUrl="http://localhost:6000/api/auth"
     )
 }
 
-export default ContactForm;
+export default ContactForm
