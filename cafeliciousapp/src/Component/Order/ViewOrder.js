@@ -13,7 +13,7 @@ const ViewOrder = () => {
 
 
 
-    console.log("this is sessionData from vieworder "+sessionData);
+
 
     const emaili="Bob@gmail.com";
 
