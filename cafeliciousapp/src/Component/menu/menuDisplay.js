@@ -13,7 +13,7 @@ const MenuDisplay=(props)=>{
 
 
     const renderData = ({listData}) => {
-        console.log("This is ListData"+listData);
+
         if(listData){
             if(listData.length > 0 ){
                 // console.log("This is ListData"+listData);
@@ -74,7 +74,7 @@ const MenuDisplay=(props)=>{
 
                                     <br/><br/>
 
-                                    <Link to={`/details?restId=${item2.restaurant_id}`} class="btn btn-info">Back to {item2.restaurant_name} Page</Link>
+                                    <Link to={`/details?restId=${item2.restaurant_id}`} className="btn btn-info">Back to {item2.restaurant_name} Page</Link>
                                    
                       
 

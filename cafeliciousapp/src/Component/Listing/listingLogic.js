@@ -17,12 +17,16 @@ const Listing = () => {
 
     //console.log(params.mealId);
     let foodTypeId = params.foodTypeId;
+
+
+    console.log("this is foodTypeId "+foodTypeId);
     // let mealId = params.mealId;
    
 
     useEffect(() => {
         sessionStorage.setItem('foodTypeId',foodTypeId)
-        axios.get(`${baseUrl}/restaurants?foodTypeId=${foodTypeId}`)
+        // fetch(`${baseUrl}/restaurants?foodtypeId=${foodTypeId}`,{method:'GET'})
+        axios.get(`${baseUrl}/restaurants?foodtypeId=${foodTypeId}`)
         .then((res) => {
             setRestList(res.data)
 
