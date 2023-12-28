@@ -11,34 +11,32 @@ const ViewOrder = () => {
     let sessionData = sessionStorage.getItem('userInfo');
     let data = JSON.parse(sessionData)
 
+
+
+    console.log("this is sessionData from vieworder "+sessionData);
+
     const emaili="Bob@gmail.com";
 
 
-    // useEffect(() => {
-    //     axios.get(`${baseUrl}/orders?email=${data.email}`).then((res) => {setOrder(res.data)})
-    // },[]);
+    useEffect(() => {
+        axios.get(`${baseUrl}/orders?email=${data.email}`).then((res) => {setOrder(res.data)})
+    },[]);
 
-        useEffect(() => {
-            // axios.get(`${baseUrl}/orders`)
-            // .then((res) =>  console.log("this is the response from view order"+res))
-            // .then((data) => {
-            //     setOrder(data);
+        // useEffect(() => {
+        //     // axios.get(`${baseUrl}/orders`)
+        //     // .then((res) =>  console.log("this is the response from view order"+res))
+        //     // .then((data) => {
+        //     //     setOrder(data);
     
-            // })
+        //     // })
 
 
-            fetch(`${baseUrl}/orders?email=${emaili}`,{method:'GET'})
-            .then((res) =>  res.json())
-            .then((data) => {
-                setOrder(data);
-    
-            })
-
-
-
-
-
-        },[]);
+        //     fetch(`${baseUrl}/orders?email=${emaili}`,{method:'GET'})
+        //     .then((res) =>  res.json())
+        //     .then((data) => {
+        //         setOrder(data);
+        //     })
+        // },[]);
 
 
 

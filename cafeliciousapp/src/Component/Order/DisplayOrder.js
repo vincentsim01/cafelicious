@@ -13,8 +13,8 @@ const DisplayOrder = (props) => {
                     <>
 
                     <tr key={item.id}>
-                        <td>{item.id}</td>
-                        <td>{item.rest_name}</td>
+                        <td>{item.orderId}</td>
+                        <td>{item.menuItem}</td>
                         <td>{item.name}</td>
                         <td>{item.email}</td>
                         <td>Rs.{item.cost}</td>
@@ -56,7 +56,7 @@ const DisplayOrder = (props) => {
                     <thead>
                         <tr>
                             <th>OrderId</th>
-                            <th>Rname</th>
+                            <th>Menu Item</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Cost</th>

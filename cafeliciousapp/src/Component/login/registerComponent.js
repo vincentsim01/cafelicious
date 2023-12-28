@@ -26,7 +26,7 @@ const Register = () => {
     }
 
     const checkout = () => {
-        console.log(values)
+        // console.log(values)
         fetch(`${url}/register`,{
             method: 'POST',
             headers:{
