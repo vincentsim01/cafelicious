@@ -1,27 +1,44 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import { useParams,useNavigate} from 'react-router-dom';
 import Header2 from '../Header2';
 
 const baseUrl = "http://localhost:9120";
 
 const PlaceOrder = () => {
+
+    if (!sessionStorage.getItem('userInfo')) {
+        window.location.href = '/login'; // Redirect to the login page
+      }
+      
     let params = useParams();
     let navigate = useNavigate();
 
-
+    
 
     let sessionData = sessionStorage.getItem('userInfo');
     let data = JSON.parse(sessionData)
 
-    
+    // try {
+    //     if (!sessionData) {
+    //       throw new Error('User is not logged in');
+    //     }
+    //     // If the user is logged in, proceed to the dashboard
+    //     console.log('Welcome to the dashboard!');
+    //     // Render your dashboard page or perform other actions
+    //   } catch (error) {
+    //     // If the variable is null or user is not logged in, catch the error
+    //     console.error(error.message);
+    //     navigate('/login'); // Redirect to login page
+    //   }
 
-    if (sessionData===""){
-        navigate('/login');
-        
-    }
+    // navigate("/login");
 
 
-    console.log("this is sessiondata from placeorder.js"+sessionData);
+
+
+
+
+    // console.log("this is sessiondata from placeorder.js"+sessionData);
 
     const initialValues = {
         id:Math.floor(Math.random() * 1000000),
