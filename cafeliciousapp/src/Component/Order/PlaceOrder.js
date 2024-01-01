@@ -8,8 +8,17 @@ const PlaceOrder = () => {
     let params = useParams();
     let navigate = useNavigate();
 
+
+
     let sessionData = sessionStorage.getItem('userInfo');
     let data = JSON.parse(sessionData)
+
+    
+
+    if (sessionData===""){
+        navigate('/login');
+        
+    }
 
 
     console.log("this is sessiondata from placeorder.js"+sessionData);

@@ -14,7 +14,7 @@ const CostFilter = (props) => {
         if(event.target.value === ""){
             costUrl = `${baseUrl}/filtery/${foodtypeId}`
         }else{
-            costUrl = `${baseUrl}/filter/${foodtypeId}?lcost=${lcost}&hcost=${hcost}`
+            costUrl = `${baseUrl}/filtery/${foodtypeId}?lcost=${lcost}&hcost=${hcost}`
         }
 
         axios.get(costUrl)
