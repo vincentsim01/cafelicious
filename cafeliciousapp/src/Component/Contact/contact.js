@@ -40,7 +40,8 @@ const baseUrl="http://localhost:5007/api/auth";
             body:JSON.stringify(values)
 
         })
-        .then(console.log("Success"));
+        // .then(console.log("Success"));
+        .then(navigate('/thankyou'))
     }
 
   

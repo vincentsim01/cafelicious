@@ -15,6 +15,7 @@ import ViewOrder from './Order/ViewOrder'
 import QuickFAQ from './FAQ/faq';
 import QuickPromotion from './promotion/promotion';
 import Menu from './menu/menu';
+import QuickThankYou from './thankyou/thankyou';
 
 
 const Routing = () => {
@@ -39,6 +40,7 @@ const Routing = () => {
                         <Route path="FAQ" element={<QuickFAQ/>}/>
                         <Route path="promotion" element={<QuickPromotion/>}/>
                         <Route path="menu/:restaurant_id" element={<Menu/>}/>
+                        <Route path="thankyou" element={<QuickThankYou/>}/>
 
 
                     </Route>
