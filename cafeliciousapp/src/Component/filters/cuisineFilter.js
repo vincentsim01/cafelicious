@@ -52,22 +52,22 @@ const CuisineFilter = (props) => {
             <div style={{marginLeft:'15%'}} onChange={handleFilter}>
                 <label className='radio'>
                     <input type="radio" name="cuisine" checked="checked" value="0"/>All
-                </label>
+                </label><br></br>
                 <label className='radio'>
                     <input type="radio" name="cuisine" value="1"/>Breakfast
-                </label>
+                </label><br></br>
                 <label className='radio'>
                     <input type="radio" name="cuisine" value="2"/>Lunch
-                </label>
+                </label><br></br>
                 <label className='radio'>
                     <input type="radio" name="cuisine" value="3"/>Dinner
-                </label>
+                </label><br></br>
                 <label className='radio'>
                     <input type="radio" name="cuisine" value="4"/>Dessert
-                </label>
+                </label><br></br>
                 <label className='radio'>
                     <input type="radio" name="cuisine" value="5"/>Snack
-                </label>
+                </label><br></br>
             </div>
         </>
     )
