@@ -7,7 +7,7 @@ const CuisineFilter = (props) => {
 
     const handleFilter = (event) => {
         let foodTypeId = props.foodTypeId;
-        let mealId = event.target.value;
+        let cuisineId = event.target.value;
         let mealUrl = "";
 
 
@@ -15,14 +15,14 @@ const CuisineFilter = (props) => {
 
     
 
-            if(mealId === ""){
-                mealUrl = `${baseUrl}/filter/${mealId}`
+            if(cuisineId === "" || cuisineId == 0){
+                mealUrl = `${baseUrl}/filtery/${foodTypeId}`
             }
-            else if(mealId == 0){
-                mealUrl=`${baseUrl}/restaurants?foodTypeId=${foodTypeId}`
+            // else if(mealId == 0){
+            //     mealUrl=`${baseUrl}/restaurants?foodTypeId=${foodTypeId}`
       
 
-            }
+            // }
 
             // else if(err){
             //     mealUrl=`${baseUrl}/restaurants?foodTypeId=${foodTypeId}`
@@ -34,7 +34,7 @@ const CuisineFilter = (props) => {
             
             
             else{
-                mealUrl = `${baseUrl}/filter/${mealId}?foodtypeId=${foodTypeId}`
+                mealUrl = `${baseUrl}/filtery/${foodTypeId}?mealId=${cuisineId}`
                 // mealUrl = `${baseUrl}/filter/${mealId}`
             }
 
