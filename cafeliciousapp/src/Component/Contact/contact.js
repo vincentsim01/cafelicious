@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react';
 import Header2 from '../Header2';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './contact.css';
 
 const baseUrl="http://localhost:5007/api/auth";
 
@@ -51,12 +52,13 @@ const baseUrl="http://localhost:5007/api/auth";
     return(
         <>
                     <Header2/>
-        <div id="contactContainer">
+        <div className="container-fluid">
+            <br></br>
 
             <span className="ContactHeader">Contact Cafelicious</span><br></br>
-            <span className="ContactSubHeader">Contact Cafelicious Here</span>
+            {/* <span className="ContactSubHeader">Contact Cafelicious Here</span> */}
 
-            <div className='panel-body'>
+            <div className='panel-body ContactSubHeader'>
                         <div className='row'>
                             <div className='col-md-6 form-group'>
                                 <label for="fname" className='control-label'>Name</label>
