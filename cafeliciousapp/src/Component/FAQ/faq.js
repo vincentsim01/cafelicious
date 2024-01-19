@@ -14,7 +14,7 @@ const QuickFAQ = () => {
 
             <span className="FAQHeader"><u>Cafelicious FAQ</u></span><br></br>
             <span className="FAQSubHeader">
-                Ask Questions
+                Frequently asked questions by our clients
             </span>
 
             <p>
