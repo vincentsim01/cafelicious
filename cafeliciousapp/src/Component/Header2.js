@@ -21,7 +21,7 @@ const Header2 = () => {
             .then((res) => res.json())
             .then((data) => {
                 setUserData(data)
-                console.log(data);
+                // console.log(data);
             })
         }
     },[])
