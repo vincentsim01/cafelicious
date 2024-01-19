@@ -12,7 +12,7 @@ const Header2 = () => {
 
     useEffect(() => {
         if(sessionStorage.getItem('ltk') != null){
-            fetch(`${url}/userinfo`,{
+            fetch(`${url}/api/auth/userInfo`,{
                 method:'GET',
                 headers:{
                     'x-access-token':sessionStorage.getItem('ltk')
@@ -36,7 +36,9 @@ const Header2 = () => {
 
     const conditionalHeader = () => {
         if(userData){
+            console.log(userData);
             if(userData.name){
+                            console.log(userData.name);
                 sessionStorage.setItem('userInfo',JSON.stringify(userData))
                 return(
                     <>
