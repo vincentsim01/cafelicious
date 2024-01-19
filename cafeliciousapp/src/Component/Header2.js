@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import {useNavigate,Link} from 'react-router-dom';
 import './Header.css';
 
-const url = "http://localhost:5001/"
+const url = "http://localhost:5001"
 
 
 const Header2 = () => {
@@ -14,16 +14,19 @@ const Header2 = () => {
         if(sessionStorage.getItem('ltk') != null){
             fetch(`${url}/api/auth/userInfo`,{
                 method:'GET',
-                headers:{
+                Headers:{
                     'x-access-token':sessionStorage.getItem('ltk')
                 }
             })
             .then((res) => res.json())
             .then((data) => {
                 setUserData(data)
+                console.log(data);
             })
         }
     },[])
+
+    console.log(userData);
 
     const handleLogout = () => {
         sessionStorage.removeItem('ltk');
@@ -36,9 +39,12 @@ const Header2 = () => {
 
     const conditionalHeader = () => {
         if(userData){
-            console.log(userData);
-            if(userData.name){
-                            console.log(userData.name);
+            // let userarray=[];
+            // userarray.push(userData);
+            // console.log(userarray);
+            // console.log(userarray[0]);
+            if(userData){
+                            // console.log(userData.name);
                 sessionStorage.setItem('userInfo',JSON.stringify(userData))
                 return(
                     <>

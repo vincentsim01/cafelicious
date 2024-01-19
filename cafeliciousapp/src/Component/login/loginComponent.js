@@ -25,7 +25,7 @@ const Login = () => {
     }
 
     const checkout = () => {
-        console.log(values)
+        // console.log(values)
         fetch(`${url}/login`,{
             method: 'POST',
             headers:{
