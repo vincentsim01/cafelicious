@@ -14,14 +14,14 @@ const Header2 = () => {
         if(sessionStorage.getItem('ltk') != null){
             fetch(`${url}/api/auth/userInfo`,{
                 method:'GET',
-                Headers:{
+                headers:{
                     'x-access-token':sessionStorage.getItem('ltk')
                 }
             })
             .then((res) => res.json())
             .then((data) => {
                 setUserData(data)
-                // console.log(data);
+                console.log(data);
             })
         }
     },[])
@@ -43,7 +43,7 @@ const Header2 = () => {
             // userarray.push(userData);
             // console.log(userarray);
             // console.log(userarray[0]);
-            if(userData){
+            if(userData.name){
                             // console.log(userData.name);
                 sessionStorage.setItem('userInfo',JSON.stringify(userData))
                 return(

@@ -41,6 +41,7 @@ const Login = () => {
             }else{
                 sessionStorage.setItem('ltk',data.token)
                 sessionStorage.setItem('userInfo',JSON.stringify(data.user));
+                sessionStorage.setItem('userInfoname',data.name);
                 navigate('/')
             }
         })
