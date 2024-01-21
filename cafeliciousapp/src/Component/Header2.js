@@ -67,6 +67,11 @@ const Header2 = () => {
         }
     }
 
+    function blackbg(){
+        document.body.classList.toggle("darkbg");
+        
+    }
+
     return(
         <header>
             {/* <div id="brand">
@@ -76,6 +81,10 @@ const Header2 = () => {
             <Link to="/" className="menumenu">Home</Link>
             <Link to="/about" className="menumenu">About Us</Link>
             <Link to="/contact" className="menumenu">Contact Us</Link>
+            {/* <button className="buttonld" onClick={blackbg}>Light Dark</button> */}
+            </span>
+            <span className="buttonldcontainer">
+            <button className="buttonld" onClick={blackbg}>Light Dark</button>
             </span>
             <div id="social">
                 {conditionalHeader()}

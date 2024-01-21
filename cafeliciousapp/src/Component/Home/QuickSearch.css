@@ -31,6 +31,10 @@
       font-family: 'Comfortaa', sans-serif;
   }
   
+  .darkbg{
+    background-color:black;
+    font-family: 'Times New Roman', Times, serif;
+}
   
   
   .tileContainer{

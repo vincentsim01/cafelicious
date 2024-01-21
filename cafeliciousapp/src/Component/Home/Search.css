@@ -22,6 +22,10 @@
     box-shadow: 10px 5px 5px purple;
 }
 
+.darkbg{
+    background-color:black;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 
 .logo{
