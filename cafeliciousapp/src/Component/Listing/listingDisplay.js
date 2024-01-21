@@ -54,19 +54,21 @@ const ListingDisplay = (props) => {
                 })
             }else{
                 return(
-                    <h2>No Data Found</h2>
+                    <div className="item"><h2>No Data Found</h2></div>
                 )
             }
         }else{
             return(
                 <div>
                     <h2>Loading....</h2>
-                    <img src="/images/loader.gif" alt="loader"/>
+                    <img src="https://i.ibb.co/N71KDpT/loading-buffering.gif" alt="loader"/>
                 </div>
             )
         }
         
     }
+
+
 
 
     return(

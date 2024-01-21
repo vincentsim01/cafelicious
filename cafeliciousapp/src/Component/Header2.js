@@ -21,12 +21,11 @@ const Header2 = () => {
             .then((res) => res.json())
             .then((data) => {
                 setUserData(data)
-                console.log(data);
+
             })
         }
     },[])
 
-    console.log(userData);
 
     const handleLogout = () => {
         sessionStorage.removeItem('ltk');
@@ -39,10 +38,7 @@ const Header2 = () => {
 
     const conditionalHeader = () => {
         if(userData){
-            // let userarray=[];
-            // userarray.push(userData);
-            // console.log(userarray);
-            // console.log(userarray[0]);
+
             if(userData.name){
                             // console.log(userData.name);
                 sessionStorage.setItem('userInfo',JSON.stringify(userData))
