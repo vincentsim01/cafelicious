@@ -42,7 +42,7 @@ const CostFilter = (props) => {
                     <input type="radio" name="cuisine" value="6.1-10"/>6.1-10
                 </label><br></br>
                 <label className='radio'>
-                    <input type="radio" name="cuisine" value="10-15"/>10-15
+                    <input type="radio" name="cuisine" value="10.1-15"/>10-15
                 </label>
             </div>
         </>

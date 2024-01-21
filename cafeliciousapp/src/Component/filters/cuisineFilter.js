@@ -48,7 +48,7 @@ const CuisineFilter = (props) => {
 
     return(
         <>
-            <center><h3>mealType Filter</h3></center>
+            <center><h3>Meal Type Filter</h3></center>
             <div style={{marginLeft:'15%'}} onChange={handleFilter}>
                 <label className='radio'>
                     <input type="radio" name="cuisine" checked="checked" value="0"/>All
@@ -67,6 +67,12 @@ const CuisineFilter = (props) => {
                 </label><br></br>
                 <label className='radio'>
                     <input type="radio" name="cuisine" value="5"/>Snack
+                </label><br></br>
+                <label className='radio'>
+                    <input type="radio" name="cuisine" value="6"/>Nightlife
+                </label><br></br>
+                <label className='radio'>
+                    <input type="radio" name="cuisine" value="7"/>Drink
                 </label><br></br>
             </div>
         </>
