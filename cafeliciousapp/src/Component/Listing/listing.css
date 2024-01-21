@@ -8,6 +8,8 @@
     width:20%;
     float: left;
     border: 5px solid gray;
+    border-radius:20px;
+    background-color: burlywood;
 }
 #content{
     width:65%;
