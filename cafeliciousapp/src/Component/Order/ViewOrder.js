@@ -15,7 +15,7 @@ const ViewOrder = () => {
 
 
 
-    const emaili="Bob@gmail.com";
+    // const emaili="Bob@gmail.com";
 
 
     useEffect(() => {
