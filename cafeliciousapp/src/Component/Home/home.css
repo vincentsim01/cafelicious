@@ -1,0 +1,25 @@
+#popupcontainer{
+    width:800px;
+    height:400px;
+    background-color: black;
+    border-radius:25px;
+    color:white;
+    font-family: 'Comfortaa', sans-serif;
+    border: 1px solid black;
+    z-index: 2;
+    position:absolute;
+    text-align: center;
+    margin-left:1100px;
+    margin-top:200px;
+}
+
+.none{
+    display:none;
+}
+
+.popupclosebutton{
+    text-align: right;
+    background-color:gray;
+    border-radius:50px;
+    margin-left:700px;
+}
