@@ -1,0 +1,39 @@
+#favrestaurantcontainer{
+    height:400px;
+    background-color: yellow;
+    text-align:center;
+}
+
+.favrestobox{
+    border:1px ridge black;
+    height:350px;
+    width:300px;
+    display:inline-block;
+    margin: 30px;
+    border-radius:15px;
+    background-color:lightgreen;
+
+}
+
+.favrestoimg{
+    width:300px;
+    height:200px;
+    border-radius:5px;
+
+}
+
+#titlefavresto{
+    background-color: yellow;
+    text-align:center;
+
+}
+
+.favbutton{
+    border-radius:30px;
+    border:solid 1px black;
+}
+
+.restoName{
+    font-size:40px;
+    font-style: italic;
+}

@@ -3,6 +3,7 @@ import Search from './Search'
 import QuickSearch from './QuickSearch'
 import './home.css';
 import { useState, useEffect } from 'react';
+import Favrestaurant from '../favrestaurant/favrestaurant';
 
 const Home = () => {
     var popupcontainer = document.getElementById('popupcontainer');
@@ -52,6 +53,7 @@ const Home = () => {
             </div>
             <Search/>
             <QuickSearch/>
+            <Favrestaurant/>
         </>
     )
 }
