@@ -74,9 +74,9 @@ const Details = () => {
                         <div className='content'>
                             <h1>{restDetails.restaurant_name}</h1>
                             <span id="cfeedback">231 Customers Rating Average</span>
-                            <h3>Old Price <del>Rs. 450</del></h3>
-                            <h3>Offer Price Rs. {restDetails.cost}</h3>
-                            <h3>Best Taste of Fresh Chai with Samosa At your Door or DineIn</h3>
+                            <h3>Old Price <del>$15</del></h3>
+                            <h3>Offer Price ${restDetails.cost}</h3>
+                            <h3>Best cafe for you and only for you</h3>
                                 <div>
                                     <div className="icons">
                                         <img src="https://i.ibb.co/wJvrhYg/veg.png" alt=""/>

@@ -19,6 +19,8 @@
     width:95%;
     margin-left: 3%;
     margin-top: 3%;
+    border-radius:15px;
+    border:solid 1px turquoise;
 }
 
 
@@ -32,8 +34,8 @@
     margin-left:2%
 }
 .icons >img{
-    width: 120px;
-    height:120px;
+    width: 100px;
+    height:100px;
 }
 
 #stock{
