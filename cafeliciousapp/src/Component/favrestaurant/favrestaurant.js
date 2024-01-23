@@ -20,7 +20,7 @@ const Favrestaurant = () =>{
 
     },[]);
 
-    console.log(theResto.map((powerful)=>{return `${powerful.restaurant_name}`}));
+    // console.log(theResto.map((powerful)=>{return `${powerful.restaurant_name}`}));
 
 var slicedresto=theResto.slice(0,3);
 

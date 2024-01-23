@@ -1,11 +1,11 @@
 #search{
-    height:450px;
+    height:550px;
     /* border:10px groove green;
      */
     background-image: url('https://i.ibb.co/5WP4pPt/image.jpg');
     background-repeat: no-repeat;
     /* background-size: cover; */
-    background-size: 100% 450px;
+    background-size: 100% 500px;
     font-family: 'Comfortaa', sans-serif;
     position:relative;
 }
