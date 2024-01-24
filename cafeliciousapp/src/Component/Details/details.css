@@ -1,6 +1,7 @@
 .main{
     display: inline-block;
-    margin-left:5%
+    margin-left:5%;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .tileImage{
